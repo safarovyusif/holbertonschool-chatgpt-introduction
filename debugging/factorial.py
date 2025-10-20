@@ -5,9 +5,9 @@ def factorial(n):
     result = 1
     while n > 1:
         result *= n
-        n -= 1  
+        n -= 1   # n hər dəfə azalmalıdır
     return result
 
-f = factorial(int(sys.argv[1]))
-print(f)
-
+if __name__ == "__main__":
+    f = factorial(int(sys.argv[1]))
+    print(f)
